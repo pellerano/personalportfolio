@@ -243,7 +243,10 @@ img{
 
 
 /*FOOTER CSS END*/
-@media screen and (min-width: 700px) and (max-width: 1440px){
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3){
     nav.desk{
         display: none;
     }
