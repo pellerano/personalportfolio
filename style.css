@@ -2,26 +2,34 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700&display=swap');
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
-                              /*GENERAL CSS*/
-* {
+/*GENERAL CSS START*/
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body{
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 500;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #24252A;
 }
-                           /*END OF GENERAL CSS*/
+/*GENERAL CSS END*/
 
-                          /*NAVBAR FONT & COLOR CSS*/
-li, a, button {
+/*NAVBAR FONT & COLOR CSS*/
+.nav li, a, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
 }
-                     /*END OF NAVBAR FONT & COLOR CSS*/
+/*END OF NAVBAR FONT & COLOR CSS*/
 
-                      /*NAVBAR LINKS AND BUTTON CSS*/
+/*NAVBAR LINKS AND BUTTON CSS START*/
 header {
   display: flex;
   justify-content: space-between;
@@ -58,9 +66,56 @@ button{
 button:hover{
   background-color: rgba(255,112,2,0.8)
 }
-                  /*END OF NAVBAR LINKS AND BUTTON CSS*/
+/*NAVBAR LINKS AND BUTTON CSS END*/
 
-                            /*BG IMAGE CSS*/
+/*MOBILE NAVBAR CSS START*/
+.container nav.mob{
+    width: 100%;
+    background: #24252A;
+    height: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.desk ul{
+    list-style: none;
+    width: 75%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+nav.desk ul li{
+    font-size: 10px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav.mob ul li:hover{
+    background: orangered;
+}
+
+nav.mob ul li.active{
+    background: orangered;
+}
+
+nav.mob ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.mob,
+.hamburger-btn{
+    display: none;
+}
+/*MOBILE NAVBAR CSS END*/
+
+/*BG IMAGE CSS START*/
 img{
   display: block;
   margin-left: auto;
@@ -68,20 +123,20 @@ img{
   width: 100%;
   cursor: auto;
 }
-                        /*END OF BG IMAGE CSS*/
+/*BG IMAGE CSS END*/
 
-                            /*FOOTER CSS*/
+/*FOOTER CSS START*/
 
-                            /*BASIC FOOTER CSS*/
+/*BASIC FOOTER CSS START*/
 .footer {
-    background: #edf0f1;
+    background: #24252A;
     color: #d3d3d3;
-    height: 350px;
+    height: 380px;
     position: relative;
 }
-                        /*END OF BASIC FOOTER CSS*/
+/*BASIC FOOTER CSS END*/
 
-                          /*FOOTER SECTIONS CSS*/
+/*FOOTER SECTIONS CSS START*/
 .footer .footer-content{
   height: 300px;
   display: flex;
@@ -91,24 +146,24 @@ img{
   flex: 1;
   padding: 25px;
 }
-                        /*END OF FOOTER SECTIONS CSS*/
+/*FOOTER SECTIONS CSS END*/
 
-                             /*COPYRIGHT CSS*/
+/*COPYRIGHT CSS START*/
 .footer .footer-bottom{
   background: #343a40;
   font-family: Ubuntu, sans-serif;
   color: #686868;
-  height: 50px;
+  height: 30px;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   padding-top: 20px;
   width: 100%
 }
-                        /*END OF COPYRIGHT CSS*/
+/*COPYRIGHT CSS END*/
 
-                      /*ABOUT(SOBRE HERMES) SECTION CSS*/
+/*ABOUT(SOBRE HERMES) SECTION CSS START*/
 .footer .footer-content h1,
 .footer .footer-content h2{
   color: white;
@@ -129,19 +184,23 @@ img{
 .footer .footer-content .about p{
   font-family: Ubuntu, sans-serif;
 }
-                  /*END OF ABOUT(SOBRE HERMES) SECTION CSS*/
+/*ABOUT(SOBRE HERMES) SECTION CSS END*/
 
-                      /*LINKS(REDES SOCIALES) SECTION CSS*/
+/*LINKS(REDES SOCIALES) SECTION CSS START*/
 .footer .footer-content .links ul a{
   border: 1px solid gray;
-  width: 45px;
-  height: 41px;
-  padding-top: 5px;
+  width: 200px;
+  height: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
   margin-right: 5px;
+  margin-top: 5px;
   text-align: center;
-  vertical-align: center;
-  display: inline-block;
-  font-size: 1.3em;
+  display: block;
+  font-size: 14px;
   border-radius: 5px;
   transition: all .3s;
 }
@@ -151,9 +210,9 @@ img{
   border: 1px solid rgb(255,112,2);
   transition: all .3s;
 }
-                  /*END OF LINKS(REDES SOCIALES) SECTION CSS*/
+/*LINKS(REDES SOCIALES) SECTION CSS END*/
 
-                     /*CONTACT FORM(CONTÁCTAME) CSS*/
+/*CONTACT FORM(CONTÁCTAME) CSS START*/
 .footer .footer-content .contact-form .contact-input{
   background: #272727;
   color: #bebdbd;
@@ -163,7 +222,7 @@ img{
   border-radius: 5px;
   display: block;
   border: none;
-  width: 100%;
+  width: 90%;
   font-family: arial, sans-serif;
 }
 
@@ -179,10 +238,46 @@ img{
 .footer .footer-content .contact-form .contact-btn{
   float: right;
 }
+/*CONTACT FORM(CONTÁCTAME) CSS END*/
 
+/*FOOTER CSS END*/
+@media screen and (max-width: 700px){
+    nav.desk{
+        display: none;
+    }
 
+    nav.mob,
+    .hamburger-btn{
+        display: block;
+    }
 
+    .hamburger-btn{
+        position: relative;
+    }
 
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times{
+        position: fixed;
+        right: 25px;
+        top: 15px;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+    }
 
-                  /*END OF CONTACT FORM(CONTÁCTAME) CSS*/
-                         /*END OF FOOTER CSS*/
+    .mob ul{
+        margin-top: 60px;
+        background: #24252A;
+        display: none;
+    }
+
+    .mob li{
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .mob ul.active{
+        display: block;
+    }
+}
