@@ -282,4 +282,20 @@ img{
     .mob ul.active{
         display: block;
     }
+
+    .footer .footer-content{
+      display: block;
+    }
+
+    .footer .footer-bottom{
+    clear: both;
+    position: relative;
+    height: 30px;
+    margin-top: -200px;
+    top: 30px;
+    }
+
+    .footer .footer-content .links ul a{
+      margin-left: 80px;
+    }
 }
