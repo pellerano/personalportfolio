@@ -83,9 +83,10 @@
                <div class="footer-section contact-form">
                  <h2>Contáctame</h2>
                  <br>
-                 <form action="index.html" method="post">
-                   <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-                   <textarea name="message" class="text-input contact-input" placeholder="Message..."></textarea>
+                 <form action="contact-form-handler.php" method="post">
+                    <input type="text" name="name" class="text-input contact-input" placeholder="Name" required>
+                   <input type="email" name="email" class="text-input contact-input" placeholder="Your email" required>
+                   <textarea name="message" class="text-input contact-input" placeholder="Message..." required></textarea>
                    <button type="submit" class="btn btn-big contact-btn">Send</button>
                  </form>
                </div>
