@@ -242,7 +242,7 @@ img{
 /*CONTACT FORM(CONTÁCTAME) CSS END*/
 
 /*FOOTER CSS END*/
-@media screen and (max-width: 431px){
+@media screen and (max-width: 700px){
     nav.desk{
         display: none;
     }
@@ -294,7 +294,4 @@ img{
     top: 30px;
     }
 
-    .footer .footer-content .links ul a{
-      margin-left: 80px;
-    }
 }
