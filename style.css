@@ -256,7 +256,7 @@ img{
     }
 
     .hamburger-btn{
-        position: relative;
+        position: absolute;
     }
 
     .hamburger-btn .fa-bars,
