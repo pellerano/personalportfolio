@@ -261,7 +261,7 @@ img{
 
     .hamburger-btn .fa-bars,
     .hamburger-btn .fa-times{
-        position: fixed;
+        position: absolute;
         right: 25px;
         top: 15px;
         font-size: 35px;
