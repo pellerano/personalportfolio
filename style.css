@@ -243,7 +243,9 @@ img{
 
 /*FOOTER CSS END*/
 @media screen and (max-width: 700px){
-    nav.desk,
+    img{
+      margin-top: 60px;
+    }
     header{
         display: none;
     }
