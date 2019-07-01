@@ -256,12 +256,13 @@ img{
     }
 
     .hamburger-btn{
-        position: absolute;
+        position: relative;
     }
 
     .hamburger-btn .fa-bars,
     .hamburger-btn .fa-times{
-        position: absolute;
+        position: relative;
+        float: right;
         right: 25px;
         top: 15px;
         font-size: 35px;
