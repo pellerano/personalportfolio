@@ -29,16 +29,18 @@
     </head>
     <body>
        <div class="container">
-    <header>
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#">CV</a></li>
-        </ul>
-      </nav>
-    <a class="cta" href="#"><button type="button" name="button">Contacto</button></a>
-  </header>
+        <header>
+          <nav>
+            <ul class="nav_links">
+              <li><a class = "home scroll" href="#home">Home</a></li>
+              <li><a class = "aboutMe scroll" href="#about">About Me</a></li>
+              <li><a class = "projects scroll" href="#projects">Projects</a></li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+          </nav>
+            <a class="cta" href="#"><button type="button" name="button">Contact Me</button></a>
+        </header>
+
            <nav class="mob">
             <div class="hamburger-btn">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -46,55 +48,47 @@
             </div>
 
                 <ul>
-                    <li class="active"><a href="#">Inicio</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">CV</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a class = "home scroll" href="#home">Home</a></li>
+                    <li><a class = "aboutMe scroll" href="#about">About Me</a></li>
+                    <li><a class = "projects scroll" href="#projects">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
                 </ul>
             </nav>
        </div>
-       <img src="images/bg.png" alt="bg" class="bg">
 
-           <div class="footer">
-             <div class="footer-content">
+       <div id="main">
+        <section id="home">
+          <div class="overlay">
+            <h1>Hermes Pellerano</h1>
+            <p>Front-End Developer and Web Designer</p>
+          </div>
+        </section>
 
-               <div class="footer-section about">
-                 <h1 class="logo-text"><span>Sobre</span> Hermes</h1>
-                 <br>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 </p>
-                 <br>
-                 <div class="contact">
-                   <span><i class="fas fa-phone"></i> &nbsp; 829-943-1520</span>
-                   <span><i class="fas fa-envelope"></i> &nbsp; hpelleranodelgiudice@gmail.com</span>
-                 </div>
-               </div>
+        <section id="about">
+            <div>
+              <div class="separator1"></div>
+              <div class="aboutMeInfo">
+                <img src="images/aboutmepic.jpg" alt="aboutmepic">
+                <h3>Who am I...</h3>
+                <hr>
+                <p class="heavy">
+                    Hello there! My name is Hermes and I'm a Front End Developer.
+                </p>
+                <p>
+                  I live in a small island in the Caribbean called Dominican Republic. Like many other people, I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.
+                </p>
+                <button class="mainButton">Find out more</button>
+              </div>
+            </div>
+        </section>
 
-               <div class="footer-section links">
-                 <h2>Redes Sociales</h2>
-                 <br>
-                 <ul>
-                   <a href="https://www.facebook.com/pellerano14"><i class="fab fa-facebook"></i> Facebook</a>
-                   <a href="https://www.instagram.com/pellerano_"><i class="fab fa-instagram"></i> Instagram</a>
-                   <a href="https://www.linkedin.com/in/hermespellerano"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                   <a href="https://www.github.com/pellerano"><i class="fab fa-github"></i> GitHub</a>
-                 </ul>
-               </div>
-               <div class="footer-section contact-form">
-                 <h2>Contáctame</h2>
-                 <br>
-                 <form action="https://formspree.io/hpelleranodelgiudice@gmail.com" method="post">
-                    <input type="text" name="name" class="text-input contact-input" placeholder="Name" required>
-                   <input type="email" name="_replyto" class="text-input contact-input" placeholder="Your email" required>
-                   <textarea name="message" class="text-input contact-input" placeholder="Message..." required></textarea>
-                   <button type="submit" class="btn btn-big contact-btn" value="send">Send</button>
-                 </form>
-               </div>
-             </div>
-             <div class="footer-bottom">
-               &copy; 2019 | Diseñado por Hermes Pellerano
-             </div>
-           </div>
-
+        <section id="projects">
+            <div>
+                <div class="separator2"></div>
+            </div>
+        </section>
+      </div>
+      
+      <script src="./app.js"></script>
     </body>
 </html>
