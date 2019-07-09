@@ -249,7 +249,7 @@ nav.mob,
   padding: .6rem;
   transition: background-color .5s, color .5s, border-color .5s;
   width: 30%;
-  height: 10vh;
+  height: 15vh;
   margin-top: 2rem;
 }
 
@@ -398,6 +398,7 @@ nav.mob,
 
     #about h3{
       font-size: 1.6rem;
+      margin-top: 5vh;
     }
 
     .heavy{
