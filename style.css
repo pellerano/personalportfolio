@@ -398,7 +398,6 @@ nav.mob,
 
     #about h3{
       font-size: 1.6rem;
-      margin-top: 20vh;
     }
 
     .heavy{
@@ -412,6 +411,7 @@ nav.mob,
 
     .mainButton{
       font-size: 1.2rem;
+      margin-bottom: 10vh;
     }
 
     .contact-links a{
