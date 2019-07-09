@@ -42,7 +42,7 @@ header {
 .container{
   z-index: 9999;
   width: 100%;
-  background: #24252A;
+  background: rgba(36, 37, 42, 0.7);
   height: 60px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
   position: fixed;
@@ -166,7 +166,7 @@ nav.mob,
 
 #about{
   background-color: white;
-  height: 50vh;
+  height: 10vh;
 }
 
 #about img{
@@ -175,38 +175,45 @@ nav.mob,
   display: block;
   margin-left: auto;
   object-fit: cover;
-  width: 40%;
+  width: 50%;
   overflow: auto;
   float: right;
 }
 
-#about p{
-  text-align: left;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  font-family: Monserrat, sans-serif;
-}
-
 .heavy{
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 2rem;
+  margin-right: 55vw;
+  text-align: -webkit-auto;
+  margin-left: 3vw;
+  margin-bottom: 1vw;
+}
+
+.info{
+  margin-right: 55vw;
+  text-align: -webkit-auto;
+  margin-left: 3vw;
+  margin-bottom: 1rem;
+  font-family: Monserrat, sans-serif;
+  font-size: 1.8rem;
 }
 
 #about h3{
   text-align: left;
-  margin-left: 1.1rem;
-  margin-top: 13rem;
+  margin-left: 3vw;
+  margin-top: 15vh;
   font-family: Montserrat, sans-serif;
-  font-size: 1.7rem;
+  font-size: 4rem;
   margin-bottom: .5rem;
   color: rgb(0, 60, 255);
   float: left;
 }
 
 #about hr{
-  width: 50%;
-  margin-left: 1.1rem;
+  width: 40%;
+  margin-left: 3vw;
   margin-bottom: 1rem;
+  background-color: #24252A;
 }
 
 .separator1{
@@ -225,14 +232,24 @@ nav.mob,
   vertical-align: top;
 }
 
+.separator3{
+  display: flex;
+  width: 100vw;
+  background-color: white;
+  height: 10px;
+  vertical-align: top;
+}
+
 .mainButton{
-  background-color:  rgb(0, 60, 255);
-  border: 1px solid  rgb(0, 60, 255);
+  background-color: rgb(0, 60, 255);
+  border: 1px solid rgb(0, 60, 255);
   border-radius: 3px;
   color: #fff;
+  font-size: 1.8rem;
   padding: .6rem;
   transition: background-color .5s, color .5s, border-color .5s;
-  width: 20%;
+  width: 30%;
+  height: 10vh;
   margin-top: 2rem;
 }
 
@@ -241,11 +258,31 @@ nav.mob,
   color:  rgb(0, 60, 255);
 }
 
-#contactMe{
-  background-color: red;
+#projects{
+  background-color: #24252A;
+}
+
+#contact{
+  background-color: rgb(0, 60, 255);
 }
 
 /*BG IMAGE CSS END*/
+
+/*COPYRIGHT CSS START*/
+#contact .footer-bottom{
+  background: white;
+  font-family: Ubuntu, sans-serif;
+  color: #343a40;
+  height: 30px;
+  text-align: center;
+  margin-top: 91vh;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%
+}
+
+/*COPYRIGHT CSS END*/
 
 @media screen and (max-width: 1024px){
     
@@ -299,6 +336,24 @@ nav.mob,
     height: 30px;
     margin-top: -200px;
     top: 30px;
+    }
+
+    #about h3{
+      font-size: 1.6rem;
+      margin-top: 20vh;
+    }
+
+    .heavy{
+      font-size: 1.4rem;
+      margin-right: 4vw;
+    }
+
+    .info{
+      font-size: 1.1rem;
+    }
+
+    .mainButton{
+      font-size: 1.2rem;
     }
 
 }
