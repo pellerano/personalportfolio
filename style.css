@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700&display=swap');
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
@@ -271,13 +272,13 @@ nav.mob,
 /*COPYRIGHT CSS START*/
 #contact .footer-bottom{
   background: white;
-  font-family: Ubuntu, sans-serif;
+  font-family: Poppins, sans-serif;
   color: #343a40;
   height: 30px;
+  padding-top: 2vh;
   text-align: center;
   bottom: 0px;
   left: 0px;
-  padding-top: 20px;
   width: 100%;
   position: absolute;
 }
@@ -337,10 +338,19 @@ nav.mob,
   transition: all .3s;
 }
 
+/*Projects Start*/
 
+#projects h2{
+  margin-top: 9vh;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 15vh;
+  float: left;
+  margin-left: 5vw;
+}
 
-
-
+/*Projects End*/
 
 @media screen and (max-width: 1024px){
     
@@ -399,20 +409,29 @@ nav.mob,
     #about h3{
       font-size: 1.6rem;
       margin-top: 5vh;
+      border-bottom: 1px solid gray;
+      padding-bottom: 5px;
+      margin-right: 52%;
+      margin-bottom: 2vh;
+      border-width: 100%;
     }
 
-    .heavy{
+    #about .heavy{
       font-size: 1.4rem;
       margin-right: 4vw;
     }
 
     .info{
       font-size: 1.1rem;
+      margin-right: 4vw;
+      margin-top: 3vh;
     }
 
     .mainButton{
       font-size: 1.2rem;
       margin-bottom: 10vh;
+      width: 60%;
+      height: 5vh;
     }
 
     .contact-links a{
@@ -425,5 +444,21 @@ nav.mob,
     .footer-contact-container p,
     .footer-contact-container i{
       font-size: 1rem;
+    }
+
+    #about img{
+      height: 40vh;
+      width: 100%;
+    }
+
+    #about hr{
+      display: none;
+    }
+
+    #projects h2{
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-size:3rem;
+      margin-top: 9vh;
     }
 }
