@@ -432,7 +432,7 @@ nav.mob,
       font-size: 1.2rem;
       margin-bottom: 5vh;
       width: 60%;
-      height: 10vh;
+      height: 8vh;
     }
 
     .contact-links a{
@@ -462,4 +462,11 @@ nav.mob,
       font-size:3rem;
       margin-top: 9vh;
     }
+}
+
+@media screen and (max-width: 700px){
+
+  #about h3{
+    margin-right: 52%;
+  }
 }
