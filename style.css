@@ -406,13 +406,13 @@ nav.mob,
     margin-top: -200px;
     top: 30px;
     }
-
+    
     #about h3{
       font-size: 1.6rem;
       margin-top: 5vh;
       border-bottom: 1px solid gray;
       padding-bottom: 5px;
-      margin-right: 80%;
+      margin-right: 75%;
       margin-bottom: 2vh;
       border-width: 100%;
     }
