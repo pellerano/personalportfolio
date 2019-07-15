@@ -412,7 +412,7 @@ nav.mob,
       margin-top: 5vh;
       border-bottom: 1px solid gray;
       padding-bottom: 5px;
-      margin-right: 52%;
+      margin-right: 80%;
       margin-bottom: 2vh;
       border-width: 100%;
     }
@@ -430,7 +430,7 @@ nav.mob,
 
     .mainButton{
       font-size: 1.2rem;
-      margin-bottom: 10vh;
+      margin-bottom: 5vh;
       width: 60%;
       height: 10vh;
     }
